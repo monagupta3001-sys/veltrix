@@ -1,0 +1,6 @@
+{
+  "name": "Veltrix E-Commerce",
+  "description": "Next-generation multi-category online shopping platform with instant quick delivery, certified refurbished marketplace, and home services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
