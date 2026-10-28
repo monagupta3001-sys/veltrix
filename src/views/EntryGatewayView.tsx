@@ -47,71 +47,39 @@ export const EntryGatewayView: React.FC = () => {
 
   return (
     <div className="relative min-h-screen w-full bg-[#070a14] text-slate-100 flex flex-col justify-between overflow-hidden select-none">
-      {/* 1. Background Animated Ambient Orbs & Cyber Grid */}
-      <div className="absolute inset-0 cyber-grid pointer-events-none opacity-40" />
-      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-gradient-to-tr from-cyan-600/20 via-blue-600/20 to-transparent rounded-full blur-[140px] pointer-events-none animate-ambient-glow" />
-      <div className="absolute bottom-1/3 right-1/4 translate-x-1/4 translate-y-1/4 w-[700px] h-[700px] bg-gradient-to-br from-indigo-700/25 via-purple-600/20 to-transparent rounded-full blur-[150px] pointer-events-none animate-ambient-glow-2" />
+      {/* 1. Google AI Studio Style Aurora Mesh Gradients & Soft Cosmic Grid */}
+      <div 
+        className="absolute inset-0 cyber-grid pointer-events-none opacity-30" 
+        style={{ maskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)', WebkitMaskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)' }}
+      />
 
-      {/* 2. THE BACKGROUND ANIMATED DRIFTING TEXT (Vivid SovereignAuth Matrix Cyber Streams) */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-55 sm:opacity-70 flex flex-col justify-around py-2 font-mono text-xs sm:text-sm font-black tracking-widest uppercase select-none">
-        {/* Stream 1 - Left Drift */}
-        <div className="animate-marquee-left whitespace-nowrap text-cyan-400 text-cyber-glow">
-          <span className="shrink-0 flex items-center">
-            ⚡ VELTRIX SUPERAPP • 12-MIN HYPERLOCAL DELIVERY • 80,000+ PRODUCTS • 32-POINT CERTIFIED TECH • 50% DIWALI DHAMAKA • PAN-INDIA EXPRESS • ZERO FRAUD • 100% GENUINE BRANDS •&nbsp;
-          </span>
-          <span className="shrink-0 flex items-center">
-            ⚡ VELTRIX SUPERAPP • 12-MIN HYPERLOCAL DELIVERY • 80,000+ PRODUCTS • 32-POINT CERTIFIED TECH • 50% DIWALI DHAMAKA • PAN-INDIA EXPRESS • ZERO FRAUD • 100% GENUINE BRANDS •&nbsp;
-          </span>
+      {/* Floating Organic Aurora Mesh Orbs (Gemini Blue, Electric Cyan, Neon Indigo, Warm Amber) */}
+      <div className="absolute -top-20 left-1/4 w-[750px] h-[750px] bg-gradient-to-tr from-cyan-500/25 via-blue-600/25 to-transparent rounded-full blur-[150px] pointer-events-none animate-aurora-1" />
+      <div className="absolute -bottom-32 right-1/4 w-[800px] h-[800px] bg-gradient-to-br from-indigo-600/30 via-purple-600/25 to-transparent rounded-full blur-[170px] pointer-events-none animate-aurora-2" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-amber-500/10 via-rose-500/10 to-indigo-600/15 rounded-full blur-[140px] pointer-events-none animate-aurora-3" />
+
+      {/* 2. Google AI Studio Style Shimmering Constellation Sparkles */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
+        <div className="absolute top-[18%] left-[12%] text-cyan-300 text-lg animate-sparkle" style={{ animationDelay: '0s' }}>
+          ✦
         </div>
-
-        {/* Stream 2 - Right Drift */}
-        <div className="animate-marquee-right whitespace-nowrap text-indigo-300">
-          <span className="shrink-0 flex items-center">
-            📱 5G SMARTPHONES • LAPTOPS &amp; WORKSTATIONS • MEN'S FASHION • WOMEN'S WEAR • HOME &amp; KITCHEN • DAILY ESSENTIALS • TOYS &amp; GAMING • SPORTS &amp; FITNESS • CERTIFIED TECH HUB •&nbsp;
-          </span>
-          <span className="shrink-0 flex items-center">
-            📱 5G SMARTPHONES • LAPTOPS &amp; WORKSTATIONS • MEN'S FASHION • WOMEN'S WEAR • HOME &amp; KITCHEN • DAILY ESSENTIALS • TOYS &amp; GAMING • SPORTS &amp; FITNESS • CERTIFIED TECH HUB •&nbsp;
-          </span>
+        <div className="absolute top-[32%] right-[16%] text-purple-300 text-sm animate-sparkle" style={{ animationDelay: '1.2s' }}>
+          ✦
         </div>
-
-        {/* Stream 3 - Left Drift Fast */}
-        <div className="animate-marquee-left-fast whitespace-nowrap text-sky-400 text-cyber-glow">
-          <span className="shrink-0 flex items-center">
-            SYS_TELEMETRY // LATENCY: 12ms // ENCRYPTION: AES-256 // BENGALURU 560038 // DELHI 110001 // MUMBAI 400001 // HYDERABAD 500081 // SUPERCOINS REWARDS •&nbsp;
-          </span>
-          <span className="shrink-0 flex items-center">
-            SYS_TELEMETRY // LATENCY: 12ms // ENCRYPTION: AES-256 // BENGALURU 560038 // DELHI 110001 // MUMBAI 400001 // HYDERABAD 500081 // SUPERCOINS REWARDS •&nbsp;
-          </span>
+        <div className="absolute bottom-[24%] left-[22%] text-amber-300 text-base animate-sparkle" style={{ animationDelay: '2.1s' }}>
+          ✦
         </div>
-
-        {/* Stream 4 - Right Drift (Molten Amber Glow) */}
-        <div className="animate-marquee-right whitespace-nowrap text-amber-300 text-cyber-glow">
-          <span className="shrink-0 flex items-center">
-            🪔 DIWALI DHAMAKA SALE LIVE: FLAT 50% TO 75% OFF • COUPON DIWALI500 FOR ₹500 OFF • 10-MIN QUICK DELIVERY IN 240+ PINCODES • FLASH TECH STEALS •&nbsp;
-          </span>
-          <span className="shrink-0 flex items-center">
-            🪔 DIWALI DHAMAKA SALE LIVE: FLAT 50% TO 75% OFF • COUPON DIWALI500 FOR ₹500 OFF • 10-MIN QUICK DELIVERY IN 240+ PINCODES • FLASH TECH STEALS •&nbsp;
-          </span>
+        <div className="absolute top-[68%] right-[32%] text-sky-400 text-xs animate-sparkle" style={{ animationDelay: '0.8s' }}>
+          ✦
         </div>
-
-        {/* Stream 5 - Left Drift */}
-        <div className="animate-marquee-left whitespace-nowrap text-emerald-400 hidden sm:flex">
-          <span className="shrink-0 flex items-center">
-            🚀 NEXT-GEN COMMERCE ENGINE • DOORSTEP TECHNICIAN APPOINTMENTS • CERTIFIED IPHONE &amp; MACBOOK GRADES • INSTANT UPI SETTLEMENTS • FAST CHECKOUT •&nbsp;
-          </span>
-          <span className="shrink-0 flex items-center">
-            🚀 NEXT-GEN COMMERCE ENGINE • DOORSTEP TECHNICIAN APPOINTMENTS • CERTIFIED IPHONE &amp; MACBOOK GRADES • INSTANT UPI SETTLEMENTS • FAST CHECKOUT •&nbsp;
-          </span>
+        <div className="absolute top-[12%] right-[38%] text-blue-300 text-sm animate-sparkle" style={{ animationDelay: '1.8s' }}>
+          ✦
         </div>
-
-        {/* Stream 6 - Right Drift */}
-        <div className="animate-marquee-right whitespace-nowrap text-purple-300 hidden md:flex">
-          <span className="shrink-0 flex items-center">
-            💎 UNDER ₹99 STORE • UNDER ₹199 STORE • UNDER ₹499 STORE • 100% ORIGINAL SPARES • 24/7 PRIORITY ASSISTANCE • ZERO COMMISSION SELLER PORTAL •&nbsp;
-          </span>
-          <span className="shrink-0 flex items-center">
-            💎 UNDER ₹99 STORE • UNDER ₹199 STORE • UNDER ₹499 STORE • 100% ORIGINAL SPARES • 24/7 PRIORITY ASSISTANCE • ZERO COMMISSION SELLER PORTAL •&nbsp;
-          </span>
+        <div className="absolute bottom-[16%] right-[10%] text-indigo-300 text-base animate-sparkle" style={{ animationDelay: '2.7s' }}>
+          ✦
+        </div>
+        <div className="absolute top-[48%] left-[8%] text-cyan-400 text-xs animate-sparkle" style={{ animationDelay: '3.1s' }}>
+          ✦
         </div>
       </div>
 
@@ -287,7 +255,7 @@ export const EntryGatewayView: React.FC = () => {
           {/* Giant Headline with Radiant Gradient Accents */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.08]">
             Unleashing the Ultimate <br className="hidden sm:inline" />
-            <span className="bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-400 via-sky-300 via-indigo-300 via-purple-400 to-pink-400 animate-gradient-flow bg-[length:200%_auto] bg-clip-text text-transparent drop-shadow-sm">
               Shopping Experience
             </span>
           </h1>
